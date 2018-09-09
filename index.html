@@ -2,50 +2,68 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>"Евраз"</title>
+  <title>Евраз</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
 	<header class="main-header">
-  	<div class="main-navigation">
       <a class="main-header-logo">
         <img src="img/index-logo.png" width="69" height="20" alt="Логотип компании «Евраз»">
       </a>
-      <a href="#">73</a>
-      <ul class="infrastructure-navigation">
-        <li><a href="#1">Автобусы</a></li>
-        <li><a href="#2">Столовая</a></li>
-        <li><a href="#3">Этажи</a></li>                
-        <li><a href="#4">Территории</a></li> 
-      </ul>
-      <form class="search-form" action="https://evraz.com" method="post">
+      <a class="header-region" href="#">73</a>
+      <div class="header-navigation">
+        <ul class="main-navigation">
+          <li class="navigation-item">
+            <a class="navigation-link bus" href="#">Автобус</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link tableware" href="#">Столовая</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link floor" href="#">Этажи</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link territory" href="#">Территория</a>
+          </li>
+        </ul>
+      </div>
+      <div class="user-navigation">
+        <form class="search-form" action="https://evraz.com" method="post">
         <input id="search" class="search-input" type="search" name="search" placeholder="Поиск:">
         <label class="visually-hidden" for="search">Поиск:</label>
         <button class="button-search" aria-label="Поиск" type="submit">
-          <svg class = "loop"></svg>
+          <svg class="loop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16">
+          <image id="Group:_2_object" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCBgQNBJmMAVXAAAA7UlEQVQoz33QPy/DcRDH8dcPwdCEzWAQtqbmdhP5DXSRmCQ8ia6deQ6WDkwG8S8kxj4BMVaClITY/NsqQc7wlSjKXXK5u8/7krsTQlDUcOPdi1N1hdQNIYW6J2umDRk1Z9+dcheg7tzk10yw4kHpM1f0+F0OQc2JLAENqz/lYMCl2RD6zNv2y+LNjir0GXehl7VNJODVcE9gUCcBLZWeQMVZSur2eiw55tlUuqLg1vIPud+R9a9HlT2o6e+aPhQWUpUFspINI3a1DapYtOXYpqVoSgBZZkbVhI6Wg7giy21biqb40+Xu5f8AQe76A5vim2hsJsueAAAAAElFTkSuQmCC"/>
+          </svg>        
         </button>
       </form>
-      <ul class="user-navigation">
-         <li class="user-email">
+         <div class="user-email">
           <a class="email" href="#">
-            <svg class = "envelope"></svg>
+            <svg class="letter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="16" viewBox="0 0 23 16">
+            <image id="Group:_4_objects" data-name="Group: 4 objects" width="23" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAQCAMAAADK8RQqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEX///8jHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAACtQbBvAAAANXRSTlMAh9fAhtzUO98fzFpYD7d9AbgDl6MGonITTs8nJjLbP27EymPJw4KtDJXOmJuqhEPYBWrRaW3BAjUAAAABYktHRDXettlrAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4ggYEDQzKlkVCQAAAJ9JREFUGNNt0FsXgUAUBeDNUIqUyehCF6KL7vL/fxvRypT2wzlrfS97nYPZnPxnvsBSEDGOKKxAJHk94o0sERAoW1XjVFN3CloH1fesZ3bQKb4OGMTs2CRGuzqHZR8/+2Rb4B2O672n5zoYun++BAiuN3/oYcTi5J7ELAo5p2lGu16apbT3vPgdoBV57+Xg3JLvHYWgqie4rvBoJv7cPF+gxwpMY0c6lAAAAABJRU5ErkJggg=="/>
+            </svg>
+            <div class="envelope-mark">12</div>
           </a>
-        </li>
-        <li class="user-profile">
+        </div>
+        <div class="user-profile">
           <a class="user-identification" href="#">Александр
-            <svg class = "icon-profile"></svg>
+            <img src="img/user-profile.png" width="30" height="30" alt="user-foto">
           </a>
-        </li>
-      </ul>
-      <ul class="site-navigation">
-        <li><a href="#">Наша компания</a></li>
-        <li><a href="#">Наша команда</a></li>
-        <li><a href="#">Моя безопасность</a></li>
-        <li><a href="#">Управляющая компания</a></li>                
-        <li><a href="#">Наши предприятия</a></li> 
-        <li><a href="#">Справочники</a></li>                
-        <li><a href="#">Сервисы</a></li> 
-      </ul>
-    </div>
+        </div>
+      </div>
+      <nav class="header-site-nav">
+        <ul class="site-navigation">
+          <li><a class="navigation-section active" href="#">Наша компания</a></li>
+          <li><a class="navigation-section" href="#">Наша команда</a></li>
+          <li><a class="navigation-section" href="#">Моя безопасность</a></li>
+          <li><a class="navigation-section" href="#">Управляющая компания</a></li>                
+          <li><a class="navigation-section" href="#">Наши предприятия</a></li> 
+          <li><a class="navigation-section" href="#">Справочники</a></li>                
+          <li><a class="navigation-section" href="#">Сервисы</a></li> 
+        </ul>
+      </nav>
   </header>
 <main>
 
@@ -57,31 +75,47 @@
     </div>
     <article class="slider-item1">
       <h2 class="visually-hidden">Рекламный блок</h2>
-      <img src="img/slide-1.jpg" width="100" height="100" alt="slider-video-1">
-      <p>ЕВРАЗ ТВ</p>
-      <b>65-летие Рельсобалочного цеха ЕВРАЗ НТМК</b>
-
-      <h3>Иванов Алексей</h3>
-      <p>Мы все хотим, чтобы ЕВРАЗ был эффективной компанией с высоким уровнем безопасности труда, ориентированной на запросы клиектов, поставляющей продукцию высокого качества...</p>
-      <p>Старший Вице-президент, Блок коммерции и развития бизнеса</p>
+      <div class="slider-content">
+        <img class="slider-video-set" src="img/slider-video.png" width="100" height="100" alt="slider-video-1">
+        <button type="button" class="slider-control"></button>
+        <div class="slider-video-description">
+          <p class="slider-description-title">ЕВРАЗ ТВ</p>
+          <p class="slider-description-text">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</p>
+      </div>
+      </div>
+      <blockquote class="slider-citation">
+        <h3 class="slider-citation-title">Иванов Алексей</h3>
+        <p class="slider-citation-content">Мы все хотим, чтобы ЕВРАЗ был эффективной компанией с высоким уровнем безопасности труда, ориентированной на запросы клиектов, поставляющей продукцию высокого качества...</p>
+        <p class="slider-citation-info">Старший Вице-президент,<br> Блок коммерции и развития бизнеса</p>
+      </blockquote>
     </article>
-    <article class="slider-item1 company-blog">
+    <article class="slider-company-blog">
      
       <div class="chief-expert"> 
-        <img src="img/slide-1-portrait.jpg" width="50" height="50" alt="slider-image">
-        <p>Царенко Владимир</p>
-        <p>Главный специалист ЕвразХолдинг</p>
+        <img src="img/chief-icon.jpg" width="50" height="50" alt="slider-image">
+        <div class="blog-description">
+          <p class="blog-description text">Царенко Владимир</p>
+          <span>Главный специалист ЕвразХолдинг</span>
+        </div>
       </div>
       <ul class="news-list">
         <li class="news-item"> 
-          <svg class="exclamation-mark"></svg>
-          <p>12 декабря</p>
-          <p>Встреча с предтавителями банка ВТБ24</p>
+          <svg class="news-image-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="31" viewBox="0 0 30 31">
+            <image id="Group:_3_objects" data-name="Group: 3 objects" width="30" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAMAAADHso01AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA8FBMVEX////uLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSTuLSQAAAAqPziZAAAATnRSTlMACVecz/IWifCqb0k3Ye/WWwcGoPhxBLTlMiQVmxTucojxVAirNvNH0W2fp1kM9FaQ0AJOGGps9SpcAeAcCr7fKd6uZMlMA5j55zoR/RAoU9RdAAAAAWJLR0RPbmZBSQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IIGBUZHdBugMIAAAFKSURBVCjPdZDZeoIwEIVHgSoIomziWkHcFa0bimJV3Je8/+PU2iK4ZC6SM+fP5OQLgFehMEFSCFEkEQ7Bc31EqCjNxFg2xtBRKvLxSLk4n0h6TTLBx7kAFERJVoKnFVkShTtNqennsLSa8rioZjw3m/VURhX/cyV/Npfz56Vbfr7w6d8pir6WC/nrWuSV91jhi9ff0BLwHkNCC4GulXC4pOlAGIDDYBBAMnjMkEDF8DhGAWLxmEWAynhcRlCp4nG1ArU6Htdr0GjicbMBrYIQMHQ90AiFFrTNDmCqY7YBul893+n3fd0ju9d1QA3fZw+pwe82ssZ3azK5y7E1uu22MZ29Bs+mhv2nnPn34pkulnPH087KdO0gtF1z5QRa2Vpvtl633awt2X6M2u0PBHdcLI4ccdjvXh9zcunlGaHzknZPmH/qXS69B+MHAYIjALEw8WcAAAAASUVORK5CYII="/>
+          </svg> 
+          <div class="blog-description">           
+            <p>12 декабря</p>
+            <span class="description-important">Встреча с предтавителями банка ВТБ24</span>
+          </div>
         </li>
         <li class="news-item"> 
-          <svg class="sheet"></svg>
-          <p>13 января</p>
-          <p>О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</p>
+          <svg class="news-image-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="31" viewBox="0 0 24 31">
+            <image id="Group:_6_objects" data-name="Group: 6 objects" width="24" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAfCAQAAABXe8XLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCBgVHAG5GCjIAAABCklEQVQ4y7WUvU4CURBGzxgs7NYEo49gY+Ij8ARKZe0bWLpEGzvo0J7KysTGN6AgoVJIbK2M9hojIhZDwQqDueO9xuy3zf2Zk9kz2azQ5vfca8duBaXF2C3fZZ+GNu2RkinewyF3PJEvTirE8sgBXck0n23jAPogNbrCDEkAlpEkwCIGkFOqxfKTMx0V6x35HvyAY5nYDq/zfhO0WA25nN/f8s5eZKw/hlxnuJLmsIh1OGHDqerrVQDgjVUH+Ah20IuUV/qXQ4NNp6qn1yGHES8O8BV2OC/dIWcr7mA7KF7MjXVole5wxLpTNdCbAMAamQOYb8w6NEnInx3KBypALuPE6m2Q6N97Oc9TOytuEud7orcAAAAASUVORK5CYII="/>
+          </svg>
+          <div class="blog-description">   
+            <p>13 января</p>
+            <span class="description-news">О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</span>
+          </div>
         </li>
       </ul>
     </article>
@@ -96,89 +130,111 @@
 
   <section class="gallery">
     <h2 class="visually-hidden">Галлерея событий</h2>
-    <figure class="gallery-content-1">
+    <figure class="gallery-content">
       <a href="#"><img src="img/gallery-image-1.jpg" width="220" height="165" alt="Шахта «МУК-96»"></a>
-      <figcaption>ЕВРАЗ передал здание шахты «МУК-96» Междуреченску</figcaption>
-      <p>Сегодня</p>
+      <p class="image-region">ЮГ</p>
+      <figcaption class="gallery-description">ЕВРАЗ передал здание шахты «МУК-96» Междуреченску</figcaption>
+      <time class="content-date">Сегодня</time>
     </figure>
-    <figure class="gallery-content-2">
+    <figure class="gallery-content">
       <a href="#"><img src="img/gallery-image-2.jpg" width="220" height="165" alt="LOTO"></a>
-      <figcaption>На теплоэлектроцентрали ЕВРАЗ Южкокса внедрили систему LOTO</figcaption>
+      <p class="image-region">ЮГ</p>
+      <figcaption class="gallery-description">На теплоэлектроцентрали ЕВРАЗ Южкокса внедрили систему LOTO</figcaption>
     </figure>
-    <figure class="gallery-content-3">
+    <figure class="gallery-content">
       <a href="#"><img src="img/gallery-image-3.jpg" width="220" height="165" alt="Встреча с дилером"></a>
-      <figcaption>ЕВРАЗ ЗСМК посетили представители ключевого дилера строительного металлопроката</figcaption>
-      <p>Вчера</p>
+      <p class="image-region red">ЗСМК</p>
+      <figcaption class="gallery-description">ЕВРАЗ ЗСМК посетили представители ключевого дилера строительного металлопроката</figcaption>
+      <time class="content-date">Вчера</time>
     </figure>
-    <figure class="gallery-content-4">
+    <figure class="gallery-content">
       <a href="#"><img src="img/gallery-image-4.jpg" width="220" height="165" alt="Выплавка стали"></a>
-      <figcaption>ЕВРАЗ НТМК повышает эффективность выплавки стали</figcaption>
-      <p>19 декабря</p>
+      <p class="image-region orange">НТМК</p>
+      <figcaption class="gallery-description">ЕВРАЗ НТМК повышает эффективность выплавки стали</figcaption>
+      <time class="content-date">19 декабря</time>
     </figure>
   </section>
 
   <ul class="more-information">
     <li class="information-item">
-      <p>все новости</p>
+      <a class="information-link-bttn news" href="#">Все новости</a>
+        <svg class="information-image news" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="20" viewBox="0 0 26 20">
+          <image id="Group:_7_objects" data-name="Group: 7 objects" width="26" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAQAAAA5SeU1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCBgXISXsd1DJAAACHUlEQVQ4y3XTXWgOUBzH8c8zYiOPl8yytgcjxrwuahduLPK2qWlElGgJsSRuSClvo+WlSd65QLGFRCOUiISRd7Uee3l2hXLn9rh4ntkzm/O/OJ3/+X/P/3/+53cE3U22SzpUify702UZ0kYkEqnyxlelKjyNFPnfSMsx2TN3jU6tKrWoMaC3TJ3TAIe0qAwCQ5wWC0QdE7f4P5AyccdEAzH7jbVRh+36Boq90iCvB6RWk+JAX9sl1ErYLd9V75QEMmyWsFWfNMhKT2UFJnvnipzAMGd9UWqur04ZGhjpmjdmdUFvTQtkK/HNUdGUe6/fsmXZo92qIDBfsxMGJ6EfQeCjc/LVaLVcgRkWGCeqzUaFHnlofCDLPm1WBPzSP9DfLglVijz2XVngth0K3PLCdKu1WRcEJnrhHpdtSJU0xl3PTZdpmz1iLntvtnJxBw1VGIhYr8MORms37+8VK3xzRL6Tmi0wx2fnjVARBKZ47o5RyZZP9ckFw1PYQIe1WmaW1+rFbJGd8rZYqkijm8nAfnZKWNspUkWeuG+CTUk9KBd3VI4arVb61fVgBRo9MSm1ilijXUlgkHovzbBY3HE5zrjYXR7LtTog62+hGTI8sl9Mg1eKLdSsTua/Uoyq02xR2jGNqiVslue6JjPTVN4NnKlJvdwgcMMSB+TZokN1p/56/Zn6qE4GeWB2qo+5Pf5TL2CuerVW+OlDV7lJ+wM6eEtqlu/QtgAAAABJRU5ErkJggg=="/>
+        </svg>
     </li>
     <li class="information-item">
-      <p>мой регион</p>
+    <a class="information-link-bttn region" href="#">Мой регион</a>
+      <svg class="information-image region" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="20" viewBox="0 0 14 20">
+        <image id="Group:_1_object" data-name="Group: 1 object" width="14" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAMAAACK2/weAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA81BMVEX///8jHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAAB02w+pAAAAUHRSTlMAHY3Py45gUgdhXrYLXxfQDBiBXCGLkS/GHtRNQ802xcp3Yz+XwXFtS5LOFNFr0inAEBu/anoIQL0CAbxyzCsqMMkFyHmGhAPCOjnDIyRmZ03erygAAAABYktHRFDjbky8AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4ggYFyIIgoVffwAAALtJREFUGNNNjeUWwlAMg8MuLttg2NBhwx2Gu/v7vw0dF8uPfkl6TgsAFoFZrcxmwUt25nACTgdzmcnt8fLa6/EBoiTjLZn5EVDIBEPhCEEJIEpLNRZPJFO0TkOjNpMFcnkyGgo09SJQKpMpoEKzWqv7Gk0yFbREQruudwhiF70+vur3YEjqJ6mSAQyGI57Gk4EJYcqjLrxgzOYmFjOD18vVGlhvlp8b2x2w/304HE/ny+H38MrYDX+6PzifIL4QzYV9npsAAAAASUVORK5CYII="/>
+      </svg>
     </li>
   </ul>
 </main>
 
 <footer class="main-footer">
-  <div class="main-footer-logo">
-    <a class="footer-logo-image">ЕВ</a>
-    <p>Мы ценим своих сотрудников и создаем возможности для их профессионального развития и карьерного роста</p>
+  <div class="about-company">
+    <a class="main-header-logo footer-logo-image">
+      <img src="img/logo-footer.png" width="101" height="16" alt="Логотип компании «Евраз»">
+    </a>
+    <p class="footer-logo-description">Мы ценим своих сотрудников и создаем возможности для их профессионального развития и карьерного роста</p>
   </div>
 
-  <div class="main-footer block-group">
+  <div class="footer-contacts">
     <b>Горячая линия</b>
     <ul class="hotline">
       <li class="hotline-item">
         <p class="footer-phone"><a class="phone" href="tel:88005558888">8-800-555-88-88</a></p>
-        <p>для сотрудников российских предприятий</p>
+        <p class="hotline-description">для сотрудников российских предприятий</p>
       </li>
       <li class="hotline-item">
         <p class="footer-phone"><a class="phone" href="tel:8800502118">8-800-502-118</a></p>
-        <p>для сотрудников украинских предприятий</p>
+        <p class="hotline-description">для сотрудников украинских предприятий</p>
       </li>
       <li class="hotline-item">
         <p class="footer-phone"><a class="phone" href="tel:88000804358">8-800-080-43-58</a></p>
-        <p>для сотрудников ЕВРАЗ Каспиан Сталь</p>
+        <p class="hotline-description">для сотрудников ЕВРАЗ Каспиан Сталь</p>
       </li>
     </ul>
     <a class="feedback-email" href="#">vopros@evraz.com</a>
     <a class="write-us hotline-bttn" href="#">Написать в горячую линию</a>
+  </div>
 
-    <b>Биржевые котировки</b>
-    <p>28 декабря 12:35(GMT)</p>
+  <div class="exchange-quotation">
+    <div class="quotation-header">
+      <b class="quotation-title">Биржевые котировки</b>
+      <time datetime="2016-12-28T12:35">28 декабря 12:35 (GMT)</time>
+    </div>
+    <table class="exchange-quotation-table">
+      <tr class="quotation-item">
+        <td class="item-index">EVRAZ(LSE):</td>
+        <td class="item-indicator">Открытие 221,00</td>
+      </tr>
+      <tr class="quotation-item">
+        <td class="item-index"><b>225.10GBX</b></td>
+        <td class="item-indicator">Максимум 238,80</td>
+      </tr>
+      <tr class="quotation-item">
+        <td class="item-index green">1.20(0.54%)</td>
+        <td class="item-indicator">Минимум 221,000</td>
+      </tr>
+    </table>
+    <table class="exchange-quotation-table">
+      <tr class="quotation-item-2">
+        <td class="item-index">Raspadskaya(MCX):</td>
+        <td class="item-indicator">Открытие 221,00</td>
+      </tr>
+      <tr class="quotation-item">
+        <td class="item-index"><b>78.96RUB</b></td>
+        <td class="item-indicator">Максимум 238,80</td>
+      </tr>
+      <tr class="quotation-item">
+        <td class="item-index green">0.65(0.83%)</td>
+        <td class="item-indicator">Минимум 221,000</td>
+      </tr>
+    </table>
+  </div>
 
-    <ul class="exchange-quotation">
-      <li class="exchange-item">EVRAZ(LSE):</li>
-      <li class="exchange-item">225.10GBX</li>
-      <li class="exchange-item">1.20(0.54%)</li>
-    </ul>
-
-    <ul class="exchange-quotation indicator">
-      <li class="item-indicator">Открытие 221,00</li>
-      <li class="item-indicator">Максимум 238,80</li>
-      <li class="item-indicator">Минимум 221,00</li>
-    </ul>
-
-    <ul class="exchange-quotation-second">
-      <li class="exchange-item-2">Raspadskaya(MCX):</li>
-      <li class="exchange-item-2">78.96RUB</li>
-      <li class="exchange-item-2">0.65(0.83%)</li>
-    </ul>
-
-    <ul class="exchange-quotation indicator">
-      <li class="item-indicator">Открытие 221,00</li>
-      <li class="item-indicator">Максимум 238,80</li>
-      <li class="item-indicator">Минимум 221,00</li>
-    </ul>
-
+  <div class="portal">
     <b>Портал</b>
     <ul class="main-footer-navigation">
       <li><a class="footer-link" href="#">Обратная связь</a></li>
@@ -187,11 +243,13 @@
       <li><a class="footer-link" href="#">Помощь</a></li>
       <li><a class="footer-link" href="#">Команда</a></li>
     </ul>
-    <p>Если вы нашли ошибку, выделите ее курсивом, нажмите одновременно клавиши "CTRL" и "ENTER" и мы скорректируем неточность.</p>
+    <p class="portal-text">Если вы нашли ошибку, выделите ее курсивом, нажмите одновременно клавиши "CTRL" и "ENTER" и мы скорректируем неточность.</p>
   </div>
 </footer>
+</div>
 </body>
 </html>
+
 
 
 
